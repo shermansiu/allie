@@ -3,6 +3,11 @@
 Allie is a GPT2-like chess model that learns chess from human gameplay.
 It is deployed on [Lichess](https://lichess.org/@/AllieTheChessBot).
 
+Contains data and code for the paper
+> **[Human-Aligned Chess With a Bit of Search](https://arxiv.org/abs/2410.03893)**  
+> Yiming Zhang, Athul Paul Jacob, Vivian Lai, Daniel Fried, Daphne Ippolito  
+> ICLR 2025
+
 ## Table of Contents
 
 - [Requirements](#requirements)
