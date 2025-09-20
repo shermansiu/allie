@@ -9,7 +9,7 @@ import torch
 from datasets import Dataset, load_dataset
 from omegaconf import DictConfig
 
-from modeling.moves import CHESS_MOVES
+from allie.modeling.moves import CHESS_MOVES
 
 Batch = dict[str, torch.Tensor]
 

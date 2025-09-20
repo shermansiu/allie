@@ -1,8 +1,8 @@
 import json
 import time
 
-from evaluation.decode import DecodeStrategy
-from modeling.data import Game, UCITokenizer, json_to_partial_game
+from allie.evaluation.decode import DecodeStrategy
+from allie.modeling.data import Game, UCITokenizer, json_to_partial_game
 
 
 def algorithm_test(alg: DecodeStrategy) -> None:

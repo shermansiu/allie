@@ -6,11 +6,11 @@ import chess
 import torch
 from omegaconf import OmegaConf
 
-from evaluation.decode import DECODE_STRATEGIES, Maia
-from modeling.data import Game, UCITokenizer
-from modeling.model import initialize_model
-from server.test import algorithm_test
-from server.utils import DEFAULT_SYSTEM, SYSTEMS, recv_dict, send_dict
+from allie.evaluation.decode import DECODE_STRATEGIES, Maia
+from allie.modeling.data import Game, UCITokenizer
+from allie.modeling.model import initialize_model
+from allie.server.test import algorithm_test
+from allie.server.utils import DEFAULT_SYSTEM, SYSTEMS, recv_dict, send_dict
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 CONFIG = "pretrain_config/medium.yaml"

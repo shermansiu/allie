@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from transformers import AutoConfig, AutoModelForCausalLM, GPT2Config, PreTrainedModel
 from transformers.utils import ModelOutput
 
-from modeling.data import UCITokenizer
+from allie.modeling.data import UCITokenizer
 
 
 class CausalLMWithControlToken(nn.Module):

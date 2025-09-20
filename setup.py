@@ -27,7 +27,7 @@ setup(
     name="allie",
     author="Yiming Zhang",
     author_email="yimingz3@cs.cmu.edu",
-    package_dir={"": "src"},
+    package_dir={"allie": "src"},
     install_requires=read_requirements("requirements.txt"),
     python_requires="~=3.11",
 )

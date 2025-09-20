@@ -4,7 +4,7 @@ import chess
 import pandas as pd
 from tqdm.auto import tqdm
 
-from evaluation.utils import compute_centipawn_loss_and_accuracy, get_stockfish_engine
+from allie.evaluation.utils import compute_centipawn_loss_and_accuracy, get_stockfish_engine
 
 
 def annotate(

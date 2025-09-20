@@ -2,8 +2,8 @@ import multiprocessing
 import socket
 import sys
 
-from modeling.data import Game
-from server.utils import recv_dict, send_dict
+from allie.modeling.data import Game
+from allie.server.utils import recv_dict, send_dict
 
 
 def query(port: int) -> bool:

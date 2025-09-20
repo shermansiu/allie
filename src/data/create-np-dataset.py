@@ -5,7 +5,7 @@ import sys
 import numpy as np
 from tqdm.auto import tqdm
 
-from modeling.data import UCITokenizer, json_to_game
+from allie.modeling.data import UCITokenizer, json_to_game
 
 
 def main():

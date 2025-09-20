@@ -21,8 +21,8 @@ from torch.utils.data import DataLoader
 from transformers import PreTrainedModel
 
 import wandb
-from modeling.data import UCITokenizer, json_to_game
-from modeling.utils import (
+from allie.modeling.data import UCITokenizer, json_to_game
+from allie.modeling.utils import (
     Batch,
     count_params,
     partition_model_parameters,

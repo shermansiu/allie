@@ -5,7 +5,7 @@ import chess
 import pandas as pd
 from tqdm.auto import tqdm
 
-from evaluation.utils import compute_white_centipawn_score, get_stockfish_engine
+from allie.evaluation.utils import compute_white_centipawn_score, get_stockfish_engine
 
 
 def evaluate_moves(moves_uci: str) -> list[float]:

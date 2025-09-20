@@ -11,20 +11,20 @@ import torch
 from omegaconf import OmegaConf
 from tqdm.auto import tqdm
 
-from evaluation.decode import (
+from allie.evaluation.decode import (
     DECODE_STRATEGIES,
     DecodeStrategy,
     GPT35Turbo,
     Maia,
     Policy,
 )
-from evaluation.utils import (
+from allie.evaluation.utils import (
     compute_centipawn_loss_and_accuracy,
     compute_white_centipawn_score,
     get_stockfish_engine,
 )
-from modeling.data import UCITokenizer, json_to_game, json_to_partial_game
-from modeling.model import initialize_model
+from allie.modeling.data import UCITokenizer, json_to_game, json_to_partial_game
+from allie.modeling.model import initialize_model
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 SEED = 42

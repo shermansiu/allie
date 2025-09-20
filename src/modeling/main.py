@@ -2,9 +2,9 @@ import sys
 
 from omegaconf import OmegaConf
 
-from modeling.data import load_data
-from modeling.model import initialize_model
-from modeling.trainer import Trainer
+from allie.modeling.data import load_data
+from allie.modeling.model import initialize_model
+from allie.modeling.trainer import Trainer
 
 
 def main():

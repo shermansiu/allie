@@ -16,8 +16,8 @@ import torch
 import torch.nn.functional as F
 from openai_api_cache import OpenAIAPICache
 
-from evaluation.carlini import ChessLLM
-from modeling.data import (
+from allie.evaluation.carlini import ChessLLM
+from allie.modeling.data import (
     TIME_MEAN,
     TIME_STDEV,
     Game,
@@ -25,9 +25,9 @@ from modeling.data import (
     apply_time_normalization,
     undo_time_normalization,
 )
-from modeling.model import CausalLMWithRegressionHead, Model
-from modeling.moves import NUM_CHESS_MOVES
-from modeling.utils import to_device
+from allie.modeling.model import CausalLMWithRegressionHead, Model
+from allie.modeling.moves import NUM_CHESS_MOVES
+from allie.modeling.utils import to_device
 
 PRECISIONS = {
     "bfloat16": torch.bfloat16,
