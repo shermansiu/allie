@@ -3,7 +3,6 @@ from typing import Any, Optional, TypeAlias
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from optimum.bettertransformer import BetterTransformer
 from transformers import AutoConfig, AutoModelForCausalLM, GPT2Config, PreTrainedModel
 from transformers.utils import ModelOutput
 
@@ -186,8 +185,6 @@ def initialize_model(
         wte_mean = pretrained_model.transformer.wte.weight.mean().item()
         wte_std = pretrained_model.transformer.wte.weight.std().item()
         torch.nn.init.normal_(model.transformer.wte.weight, wte_mean, wte_std)
-
-    model = BetterTransformer.transform(model)
 
     if use_control_token:
         model = CausalLMWithControlToken(model)
